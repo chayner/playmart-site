@@ -1,0 +1,44 @@
+/* --- Colors --- */
+$base: #333;
+$blue: #3d6eb1;
+$yellow: #d69e36;
+$green: #619258;
+$gray: #CCCCCC;
+$darker-gray: #b7b8be;
+$light-gray: #f8f8f8;
+$white: #ffffff;
+
+
+/* --- Mixins --- */
+@mixin btn {
+  @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+  @include transition (all .4s ease-in-out);
+  display: block;
+  float: left;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: .9em 3em;
+  color: #fff;
+  font-size: .8em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  letter-spacing: .1em;
+}
+
+@mixin spr {
+  background: url(../images/sprite.png) no-repeat scroll 0 0;
+}
+
+@mixin node-title {
+    color: $yellow;
+    font: 19px Karla, Arial, sans-serif;
+    margin-top: 0;
+}
+
+/* --- Fonts --- */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(http://themes.googleusercontent.com/static/fonts/karla/v2/QT0qO2FiFD03cwUe_t62t6CWcynf_cDxXwCLxiixG1c.woff) format('woff');
+}

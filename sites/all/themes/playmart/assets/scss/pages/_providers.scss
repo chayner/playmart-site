@@ -1,0 +1,43 @@
+// PROVIDERS
+
+.providers {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  .views-field-field-prov-photo {
+    .field-content img {
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+    }
+    @include media($desktop) {
+      @include span-columns(2);
+      margin-right: 16px;
+    }
+  }
+  @include media($desktop) {
+    @include span-columns(8);
+  }
+  .views-field-field-prov-name {
+    margin-bottom: 10px;
+    .field-content {
+      color: #7e4a82;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(3);
+    }
+  }
+  .views-field-field-prov-bio {
+    .field-content {
+      color: $gray;
+      line-height: 1.4em;
+    }
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(6);
+    }
+  }
+}

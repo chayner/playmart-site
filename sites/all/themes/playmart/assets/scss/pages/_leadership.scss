@@ -1,0 +1,47 @@
+// LEADERSHIP
+
+#main-content li.leadership-bio {
+  list-style-type: none;
+
+  .node-leadership {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    @include media($desktop) {
+      text-align: left;
+      @include outer-container;
+    }
+  }
+  .node-leadership img {
+    border-radius: 8px;
+    @include media($desktop) {
+      @include span-columns(2);
+    }
+  }
+  .node-leadership .field-type-text {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 6px;
+    @include media($desktop) {
+      @include span-columns(5);
+      margin-left: 29px;
+    }
+  }
+  div.field.field-type-text:nth-child(2) {
+    color: #7e4a82;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .field-type-text-long {
+    color: $gray;
+    font-size: 14px;
+    line-height: 1.4em;
+    @include media($desktop) {
+      @include span-columns(6);
+      margin-left: 29px;
+    }
+  }
+}

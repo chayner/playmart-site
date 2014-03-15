@@ -1,0 +1,23 @@
+// WHO WE ARE
+
+.who-we-are {
+  display: block;
+  @include media($desktop) {
+    display: inline-block;
+    margin-right: 4px;
+  }
+  span.field-content a {
+    font-size: 14px;
+    font-weight: 400;
+    &:before {
+      content: "• ";
+      color: black;
+    }
+    &:hover {
+      color: $purple;
+    } 
+    &:visited {
+      color: $purple;
+    }
+  }
+}

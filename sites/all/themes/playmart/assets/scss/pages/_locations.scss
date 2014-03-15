@@ -1,0 +1,553 @@
+
+// Location-Search
+
+.outer {
+  @include outer-container;
+  #inner {
+    @include span-columns(6)
+  }
+  #inner-two {
+    @include span-columns(6)
+  }
+}
+.location-search-map {
+  display: none;
+}
+
+.location-search-hours {
+  display: none;
+  @include media($desktop) {
+    display: inline;
+  }
+}
+
+.location-search-address {
+  display: none;
+  @include media($desktop) {
+    display: inline;
+  }
+}
+
+#views-exposed-form-location-search-page {
+  display: none;
+  @include media($desktop) {
+   display: inline;
+ }
+}
+
+#mobile-location-title {
+  color: $purple;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+  @include media($desktop) {
+    display: none;
+  }
+}
+
+.location {
+  .location-title {
+    .field-content a, .field-content a.active, .field-content a:visited, .field-content a:hover  {
+      color: $purple;
+      font-size: 20px;
+      font-weight: bold;
+      @include media($desktop) {
+        color: $purple;
+      }
+    }
+  }
+}
+
+.location-search-miles {
+  color: gray;
+  font-size: 18px;
+  margin-left: 30px;
+  font-style: italic;
+  margin-bottom: -25px;
+}
+
+.location-search-near-by {
+  display: none;
+  @include media($desktop) {
+    display: inline;
+  }
+}
+
+.location-search-phone {
+  color: $purple;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 40px;
+  border-bottom: 2px solid gray;
+}
+
+#mapimg1 {
+  display: none;
+  @include media($desktop) {
+    display: inline;
+  }
+}
+
+#directions {
+  display: none;
+  @include media($desktop) {
+    display: inline;
+  }
+}
+
+#get-directions {
+  display: none;
+  @include media($desktop) {
+    display: inline;
+  }
+}
+
+.location-sidebar {
+  display: block;
+  @include media($desktop) {
+    background-color: rgba(227, 227, 227, 0.54);
+    margin-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    @include span-columns(3);
+    width: auto;
+    margin-top: -330px;
+    margin-left: -20px;
+    position: relative;
+  }
+}
+
+.location-sidebar-left {
+  @include media($desktop) {
+    @include span-columns(3);
+    margin-top: -50px;
+    padding-top: 20px;
+    @include border-top-radius(6px);
+    @include border-bottom-radius(6px);
+    background-color: white;
+    border-style: solid;
+    border-color: #c7ccd1;
+    border-width: 2px;
+    width: auto;
+    margin-right: 0px;
+    margin-left: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.search-location-title {
+  @include media($desktop) {
+    color: $purple;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 35px;
+  }
+}
+
+input[type="text"].location-search-field {
+  @include media($desktop) {
+    margin-left: 5px;
+    text-align: center;
+    width: 215px;
+    border-color: rgba(146, 142, 142, 0.67);
+    color: #928E8E;
+    text-indent: 20px;
+  }
+}
+
+input[type="submit"].hero-location-search-btn {
+  /**margin: 0 auto;**/
+  text-transform: uppercase;
+  /**width: 100%;**/
+  @include button($purple);
+  padding: 14px 75px;
+  margin-left: 5px;
+  position: relative;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#see-all-locations {
+  @include media($desktop) {
+    margin-left: 50px;
+    font-size: 14px;
+    margin-bottom: -25px;
+  }
+}
+
+.add-image {
+  @include media($desktop) {
+    margin-left: 20px;
+    #location-add {
+      margin-top: 20px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.location-sidebar-left-testimonials {
+  @include media($desktop) {
+    @include span-columns(3);
+    /**@include shift(.3);**/
+    margin-top: 10px;
+    padding-top: 20px;
+    @include border-top-radius(6px);
+    @include border-bottom-radius(6px);
+    background-color: white;
+    border-style: solid;
+    border-color: #c7ccd1;
+    border-width: 2px;
+    width: auto;
+    margin-right: 0px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+    float: none;
+  }
+}
+
+.testimonial-location-title {
+  @include media($desktop) {
+    color: $purple;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4em;
+    text-align: center;
+  }
+}
+
+.hero-see-more-locations-btn {
+  margin-top: -90px;
+  text-transform: uppercase;
+  @include button($purple);
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin-left: 30px;
+  padding: 4px 18px;
+  font-weight: normal;
+}
+
+.expand-search-btn {
+  margin-top: -90px;
+  text-transform: uppercase;
+  @include button(#e7e7e7);
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin-left: 530px;
+  padding: 4px 18px;
+  color: rgba(51, 51, 51, 0.72);
+}
+
+.main-location-title {
+  display: none;
+  @include media($desktop) {
+    color: $purple;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}
+
+#directions-two {
+  display: inline;
+  width: 20px;
+  .view-who-we-are.view-id-who_we_are.view-display-id-block_1 {
+    display: none;
+  }
+}
+
+
+//Individual Location page
+
+.node-type-location-page {
+
+  .sidebar-first .views-field-field-promo-image img {
+    padding-top: 20px;
+  }
+
+  .thoroughfare {
+    text-align: left;
+    display: block;
+    margin-left: 0px;
+    @include media($desktop) {
+      text-align: left;
+      display: block;
+      margin-left: 0px;
+    }
+  }
+
+  .field-item.even {
+    z-index: 300;
+    position: relative;
+    @include media($desktop){
+      z-index: 300;
+      position: relative;
+    }
+  }
+
+  .field.field-name-field-location-patient-forms.field-type-link-field {
+    display: none;
+    @include media($desktop) {
+      display: block;
+      width: 100%;
+      position: relative;
+      z-index: 300;
+      top: 320px;
+      left: -350px;
+    }
+  }
+
+  .field.field-name-field-payment-options.field-type-text {
+    width: 100%;
+    content: $gray-dark;
+    line-height: 1.10em;
+    padding-top: 15px;
+    @include media($desktop) {
+      width: 100%;
+      color: $gray-dark;
+      line-height: 1.10em;
+      padding-top: 15px;
+    }
+    label {
+      color: #666666;
+      padding-bottom: 10px;
+      @include media($desktop) {
+        color: #666666;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .field.field-name-field-form-description-two.field-type-text {
+    line-height: 1.2em;
+    color: $gray-dark;
+    margin-top: 20px;
+    @include media($desktop) {
+      line-height: 1.2em;
+      color: $gray-dark;
+      margin-top: 20px;
+    }
+    label {
+      color: #666666;
+      padding-bottom: 10px;
+      @include media($desktop) {
+        color: #666666;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .field.field-name-field-for-description.field-type-text {
+    color: #666666;
+    @include media($desktop) {
+      color: #666666;
+    }
+  }
+
+
+  .addressfield-container-inline.locality-block.country-US {
+    text-align: left;
+    display: block;
+    width: 100%;
+    position: relative;
+    @include media($desktop) {
+      text-align: left;
+      display: block;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  .field.field-name-field-location-services.field-type-taxonomy-term-reference {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: #666666;
+    .field-item.even{
+      a {
+        color: $purple;
+      }
+    }
+    .odd {
+      a {
+        color: $purple;
+      }
+    }
+    label {
+      @include media($desktop) {
+        text-align: left;
+      }
+    }
+    @include media($desktop) {
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin-top: -20px;
+      position: relative;
+      color: #666666;
+      .field-item.even{
+        a {
+          color: $purple;
+        }
+      }
+      .odd {
+        a {
+          color: $purple;
+        }
+      }
+    }
+  }
+
+  .addressfield-container-inline.locality-block.country-US {
+    margin-left: 0px;
+    text-align: center;
+    @include media($desktop) {
+      margin-left: 0px;
+      text-align: left;
+    }
+  }
+
+  .node.node-location-page .location-patient-form-btn {
+    position: relative;
+    top: 40px;
+    @include media($desktop) {
+      position: relative;
+      top: 0px;
+      left: 350px;
+    }
+  }
+
+  .field.field-name-field-provider-images.field-type-image {
+    display: none;
+    @include media($desktop) {
+      margin-top: -80px;
+      display: block;
+      position: relative;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      label {
+        display: block;
+        color: #927095;
+      }
+    }
+  }
+
+  .node-type-location-page .field.field-name-field-location-services.field-type-taxonomy-term-reference {
+    color: #666666;
+    @include media($desktop) {
+      padding-top: 20px;
+    }
+    label {
+      color: $gray;
+      @include media($desktop) {
+       color: #666666;
+       margin-top: 0px;
+     }
+   }
+ }
+
+ .node.node-location-page .field-type-addressfield {
+  color: #666666;
+  font-size: 16px;
+}
+
+.node.node-location-page .field-name-field-location-near-by {
+  color: #666666;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 20px;
+  @include media($desktop) {
+    color: #666666;
+    font-size: 14px;
+    font-style: italic;
+  }
+}
+
+.field.field-name-field-location-hours.field-type-text {
+  font-size: 14px;
+  @include media($desktop){
+    font-size: 14px;
+    margin-bottom: -20px;
+  }
+}
+}
+
+.page-location-map-page {
+  .views-field.views-field-field-provider-images {
+    .views-label.views-label-field-provider-images {
+      display: none;
+      @include media($desktop){
+        display: none;
+      }
+    }
+  }
+
+  .sidebar-first .views-field-field-promo-image img {
+    margin-top: 20px;
+  }
+
+  .geofield-proximity-origin-from {
+    display: block;
+    @include media($desktop){
+      display: block;
+    }
+  }
+
+  #edit-field-geofield-distance-distance {
+    display: block;
+    @include media($desktop){
+      width: 40%;
+      height: 36px;
+      text-align: center;
+      position: relative;
+      display: block;
+    }
+  }
+
+  .page-front input[type="text"] {
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    padding: 9px 34px 9px 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: gray;
+  }
+
+  #edit-field-geofield-distance-unit {
+    display: table-row;
+    @include media($desktop){
+      width: 50%;
+      background: #ccc;
+      border: 1px solid #999;
+      border-radius: 5px;
+      display: none;
+      float: right;
+      height: 36px;
+      margin-top: -46px;
+      position: relative;
+    }
+  }
+
+  .geofieldMap.geofield-processed-processed {
+    display: none;
+    @include media($desktop) {
+      display: none;
+    }
+  }
+
+  .views-field.views-field-field-payment-options {
+    display: none;
+    @include media($desktop) {
+      display: none;
+    }
+  }
+}

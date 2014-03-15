@@ -1,0 +1,279 @@
+// HERO
+.hero-container {
+  background: url('../images/hero_image_mobile.jpg') center top;
+  padding-bottom: 20px;
+  @include span-columns(16);
+  @include media($desktop) {
+    background: $green;
+    height: 360px;
+    @include span-columns(8);
+    float: none;
+  }
+  .hero-background-image {
+    display: none;
+    @include media($desktop) {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 360px;
+    }
+    img {
+      display: none;
+      @include media($desktop) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -570px;
+        max-width: 1140px;
+      }
+    }
+  }
+}
+.hero-content {
+  padding: 36px 40px 10px;
+  @include media($desktop) {
+    padding: 36px 0 0;
+    position: relative;
+    z-index: 1;
+    @include outer-container;
+  }
+}
+.hero-left {
+  @include span-columns(16);
+  display: block;
+  background: none;
+  padding: 0;
+  @include media($desktop) {
+    @include span-columns(2.4);
+  }
+}
+.hero-right {
+  margin-top: 20px;
+  text-align: center;
+  @include span-columns(16);
+  @include media($desktop) {
+    margin-top: 0;
+    text-align: right;
+    @include span-columns(3.5);
+    @include shift(2.1);
+  }
+  .field-content.hero-heading ul li {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 6px;
+    &:last-child {
+      margin-bottom: 2px;
+    }
+  }
+  .field-content.hero-subheading {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 1.3em;
+    ul li {
+      &:last-child {
+        margin-bottom: -20px;
+      }
+    }
+  }
+  .views-field-field-hero-button {
+    .field-content a {
+      margin-top: 16px;
+      text-transform: uppercase;
+      @include button($purple);
+      font-weight: 400;
+      padding: 7px 18px;
+      a {
+        color: white;
+        &:hover {
+          color: white;
+        }
+        &:visited {
+          color: white;
+        }
+      }
+    }
+  }
+}
+.hero-right h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: -8px;
+}
+.hero-right p {
+  color: white;
+  line-height: 1.5em;
+  margin-bottom: 1.3em;
+}
+
+// FRONT PAGE
+
+.home-content {
+  background-color: $gray-lighter;
+  @include border-top-radius(6px);
+  @include border-bottom-radius(6px);
+  @include outer-container;
+  @include pad(60px 40px 60px);
+  @include media($desktop) {
+    padding: 30px 60px 60px;
+    @include position(relative, -52px 0 0 0);
+  }
+  .home-content-container {
+    position: relative;
+  }
+  h1 {
+    color: $purple;
+    font-size: 26px;
+    position: relative;
+    text-align: center;
+    top: -2px;
+    z-index: 1;
+  }
+  .news-image {
+    text-align: center;
+    img {
+      @include border-top-radius(6px);
+      @include border-bottom-radius(6px);
+    }
+    @include span-columns(16);
+    @include media($desktop) {
+      @include span-columns(6 of 12);
+    }
+  }
+  .news-body {
+    text-align: center;
+    p {
+      margin-top: 0;
+    }
+  }
+  .news-more {
+    text-align: right;
+  }
+  #news-content.with-image {
+    .news-body {
+      @include media($desktop) {
+        @include span-columns(6 of 12);
+        @include omega();
+        text-align: left;
+      }
+    }
+  }
+}
+
+.home-bottom {
+  padding: 30px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  position: relative;
+  @include outer-container;
+  @include media($desktop) {
+    padding: 30px 0;
+  }
+  .home-bottom-left {
+    text-align: center;
+    @include span-columns(16);
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(5);
+      @include outer-container;
+    }
+    h2.title {
+      font-size: 20px;
+    }
+  }
+  .home-testimonial-block {
+    @include clearfix;
+    margin-bottom: 15px;
+  }
+  .home-testimonial-image {
+    @include span-columns(16);
+    @include media($desktop) {
+      @include span-columns(2);
+    }
+    img {
+      margin-right: 20px;
+      @include border-top-radius(6px);
+      @include border-bottom-radius(6px);
+    }
+  }
+  .home-testimonial {
+    margin-bottom: 15px;
+    @include span-columns(16);
+    @include media($desktop) {
+      font-size: 14px;
+      line-height: 1.4em;
+      margin-bottom: 5px;
+      margin-left: 20px;
+      @include span-columns(6);
+    }
+  }
+  .home-testimonial-meta {
+    color: $gray;
+    font-size: 14px;
+    font-weight: bold;
+    @include media($desktop) {
+      margin-left: 20px;
+      @include span-columns(6);
+    }
+  }
+  .home-bottom-right {
+    background: $purple;
+    padding: 20px;
+    text-align: center;
+    /**margin-left: 10px;**/
+    @include span-columns(16);
+    @include media($desktop) {
+      @include border-top-radius(6px);
+      @include border-bottom-radius(6px);
+      @include span-columns(3);
+      @include shift(.3);
+    }
+  }
+  .home-newsletter h3 {
+    color: white;
+    line-height: 1.3em;
+  }
+  .home-newsletter p {
+    color: white;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+  }
+  label.required {
+    color: white;
+    font-weight: normal;
+  }
+  .home-newsletter input {
+    margin: 0 auto 10px;
+    padding: 8px;
+    width: 60%;
+    color: $gray;
+    font-size: 14px;
+    @include border-top-radius(6px);
+    @include border-bottom-radius(6px);
+    @include media($desktop) {
+      width: 100%;
+      color: $gray;
+      font-size: 14px;
+    }
+  }
+  #edit-submit {
+    margin-top: 10px;
+    padding: 12px 0;
+    text-transform: capitalize;
+  }
+  .home-newsletter-btn {
+    text-transform: uppercase;
+    @include button($gray-light);
+    padding: 3px 40px;
+    @include media($desktop) {
+      float: left;
+      span:after { content: 'For The Newsletter'; }
+      padding: 3px 27px;
+    }
+  }
+  #emma-block-subscribe-form input {
+    margin-top: 3px;
+  }
+}

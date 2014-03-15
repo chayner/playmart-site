@@ -1,0 +1,79 @@
+#main-content article.location-landing {
+
+  .location-top {
+    @include outer-container;
+  }
+
+  .location-info, .location-images {
+    @include media($tablet) {
+      @include span-columns(8 of 16);
+    }
+  }
+
+  .location-info {
+    font-size: 14px;
+    .nearby {
+      background: url("../images/ico/ico_near_by.png") 0% no-repeat;
+      font-style: italic;
+      line-height: 1.3em;
+      margin-bottom: 0;
+      padding-left: 14px;
+    }
+    .phone {
+      font-weight: 600;
+    }
+    .hours {
+      margin-top: 2em;
+    }
+    .forms a {
+      margin-top: 2em;
+      @include button-purple;
+    }
+  }
+
+  .location-images {
+    .photo {
+      margin-bottom: 0.5em;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .map {
+      margin-bottom: 0.5em;
+    }
+    .directions {
+      text-transform: capitalize;
+      text-align: center;
+    }
+
+  }
+
+  .location-bottom {
+    @include outer-container;
+    ul.services {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+    }
+    ul.services > li {
+      list-style-type: none;
+      @include media($tablet) {
+        @include span-columns(3 of 9);
+        @include omega(3n);
+      }
+      .field-name-field-service-bullets {
+        font-size: 14px;
+        ul {
+          margin: 0 0 0 20px;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+}

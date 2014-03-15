@@ -1,0 +1,112 @@
+// TESTIMONIALS
+
+.page-testimonials {
+  .testimonial-item {
+    .views-row{
+      @include media($desktop){
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      @include media($tablet){
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.testimonials {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  .views-field-field-test-photo {
+    .field-content img {
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+    }
+    @include media($desktop) {
+      @include span-columns(2);
+      margin-right: 16px;
+    }
+  }
+  @include media($desktop) {
+    @include span-columns(8);
+  }
+  .views-field-title {
+    .field-content {
+      color: #7e4a82;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(3);
+    }
+  }
+  .views-field-nothing {
+    .field-content {
+      color: $gray;
+      font-size: 14px;
+      .pipe {
+        color: $teal;
+      }
+      .location {
+        font-style: italic;
+      }
+    }
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(4);
+    }
+  }
+  .views-field-body {
+    .field-content {
+      color: $gray;
+      line-height: 1.4em;
+    }
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(6);
+    }
+  }
+}
+.node-testimonials {
+  color: $gray;
+  margin-bottom: 60px;
+  text-align: center;
+  .field.field-name-field-test-photo.field-type-image img {
+    @include border-top-radius(6px);
+    @include border-bottom-radius(6px);
+  }
+  .field-name-field-test-attribution {
+    display: none;
+  }
+  .field-name-field-test-type {
+    font-weight: 700;
+    margin-bottom: -10px;
+  }
+  .field-name-field-test-location {
+    font-style: italic;
+  }
+  .field-type-text-with-summary {
+    line-height: 1.4em;
+    width: 100%;
+  }
+  @include media($desktop) {
+    text-align: left;
+    .field-name-field-test-type {
+      float: left;
+      font-weight: 600;
+      &:after {
+        content: " | ";
+        color: $teal;
+        margin-right: 5px;
+      }
+    }
+    .field-name-field-test-location {
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// PHOTO GALLERY
+
+.view-photo-gallery {
+  .photo-gallery-page-images {
+    .views-field.views-field-field-gallery-image {
+      img {
+        margin-bottom: 20px;
+        @include span-columns(16);
+        @include border-top-radius(6px);
+        @include border-bottom-radius(6px);
+      }
+      .view-photo-gallery.photo-gallery-page-images .views-field.views-field-field-gallery-image img:last-child {
+        margin-right: 0;
+      }
+      @include media($desktop) {
+        padding-right: 20px;
+        @include span-columns(2.5);
+        margin-right: 34px;
+      }
+    }
+  }
+}
+
+.node-photo-gallery {
+  .field-name-field-gallery-image {
+    text-align: center;
+    img {
+      @include span-columns(16);
+    }
+  }
+}

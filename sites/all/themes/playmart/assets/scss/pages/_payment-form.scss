@@ -1,0 +1,127 @@
+.pay-webform_pay {
+  text-align: left;
+
+  fieldset {
+    border: none;
+    margin: 20px 0 40px;
+    padding: 20px 0 0;
+    @include outer-container;
+    legend {
+      color: $purple;
+      font-size: 1.4em;
+      text-align: left;
+    }
+  }
+
+  .form-item {
+    select {
+      margin-top: 10px;
+    }
+  }
+
+  #edit-webform-pay-pay-method-1-cc-type input {
+    float: left;
+    clear: both;
+  }
+
+  .form-radios {
+    @include outer-container;
+    margin-bottom: 10px;
+  }
+
+  .form-radios > div {
+    float: left;
+    label {
+      float: left;
+      margin-left: 7px;
+      margin-top: 5px;
+      margin-right: 20px;
+    }
+  }
+
+  @include media($tablet) {
+    .cc-exp {
+      @include span-columns(4 of 8);
+      label, select {
+        float: left;
+        margin: 10px 0;
+      }
+      select {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .pay-cc-name,
+  .pay-cc-type,
+  .pay-cc-info,
+  .pay-cc-exp {
+    @include outer-container;
+  }
+
+  .pay-cc-type {
+    img {
+      display: none;
+    }
+  }
+
+
+  .cc-name {
+    @include fill-parent;
+    @include media($tablet) {
+      @include span-columns(4 of 8);
+    }
+  }
+  .pay-cc-number,
+  .pay-cc-ccv2 {
+    @include fill-parent;
+  }
+
+  @include media($tablet) {
+    .pay-cc-number {
+      @include span-columns(6 of 8);
+    }
+
+    .pay-cc-ccv2 {
+      @include span-columns(2 of 8);
+    }
+
+    #webform-component-billing-address--city {
+      @include span-columns(3 of 8);
+      input {
+        @include fill-parent;
+      }
+    }
+
+    #webform-component-billing-address--state {
+      @include span-columns(3 of 8);
+    }
+
+    #webform-component-billing-address--zip-code {
+      @include span-columns(2 of 8);
+      @include omega();
+      input {
+        @include fill-parent;
+      }
+    }
+
+    #webform-component-visit-information--patient-account-number,
+    #webform-component-visit-information--state-of-visit {
+      @include span-columns(4 of 8);
+      @include omega(2n);
+    }
+
+    #webform-component-visit-information--pay-amount {
+      width: 30%;
+      span, input {
+        float: left;
+        margin-top: 10px;
+        margin-right: 5px;
+      }
+      input {
+        width: 90%;
+      }
+    }
+  }
+
+}

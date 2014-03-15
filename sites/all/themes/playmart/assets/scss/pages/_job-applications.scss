@@ -1,0 +1,117 @@
+
+//Job Search Main Paragraph
+
+.jobs-intro-para {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.7em;
+  color: $gray-dark;
+  padding-bottom: 15px;
+  @include media($desktop) {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.7em;
+    color: $gray-dark;
+    padding-bottom: 15px;
+  }
+}
+
+.jobs-benefits {
+  color: $gray-dark;
+  font-size: 14px;
+  @include media($desktop) {
+    color: $gray-dark;
+    font-size: 14px;
+  }
+}
+
+.jobs-benefits-list {
+  color: $gray-dark;
+  font-size: 14px;
+  margin-top: 5px;
+  @include media($desktop) {
+    color: $gray-dark;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  li {
+    list-style: inherit;
+    @include media($desktop) {
+      list-style: inherit;
+    }
+  }
+}
+
+.jobs-interested {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.7em;
+  color: $gray-dark;
+  @include media($desktop) {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.7em;
+    color: $gray-dark;
+  }
+}
+
+// Job Application Page
+
+.page-job-applications {
+
+  td {
+    border-right: 2px solid white;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    line-height: 1.7em;
+  }
+
+  tr {
+    border-bottom: 2px solid white;
+  }
+
+  .views-table.cols-5 {
+    width: 100%;
+    position: relative;
+    border: 2px solid white;
+  }
+
+  th {
+    color: $gray;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+
+  .views-field.views-field-title {
+    font-weight: bold;
+    text-align: left;
+    a {
+      padding-left: 2px;
+      padding-right: 20px;
+    }
+  }
+
+  .view-filters {
+    padding-bottom: 20px;
+    label {
+      color: $gray;
+    }
+    .views-exposed-widgets.clearfix {
+      border-bottom: 2px solid rgb(201, 201, 201);
+      padding-bottom: 40px;
+    }
+    #edit-keys {
+      border-color: rgb(139, 139, 139);
+    }
+  }
+
+  #edit-submit-job-applications {
+    background: #927095;
+    margin-top: 43px;
+    position: relative;
+  }
+
+}

@@ -1,0 +1,7 @@
+@mixin sprite($pos) {
+  background: url(../images/sprite.png) no-repeat scroll 0 0;
+  background-position: $pos;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}

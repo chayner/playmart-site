@@ -1,0 +1,54 @@
+// PROMOTIONS
+
+.promotions {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  .views-field-field-promo-image {
+    .field-content img {
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+    }
+    @include media($desktop) {
+      @include span-columns(2);
+      margin-right: 16px;
+    }
+  }
+  @include media($desktop) {
+    @include span-columns(8);
+  }
+  .views-field-title {
+    margin-bottom: -10px;
+    .field-content {
+      color: #7e4a82;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(3);
+    }
+  }
+  .views-field-body {
+    .field-content {
+      color: $gray;
+      line-height: 1.4em;
+    }
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(6);
+      margin-right: 0;
+    }
+  }
+  .views-field-field-promo-link {
+    @include media($desktop) {
+      text-align: left;
+      @include span-columns(3);
+    }
+    .field-content a {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

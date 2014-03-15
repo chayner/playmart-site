@@ -1,0 +1,23 @@
+@mixin btn {
+  background-color: #ccc;
+  color: #fff;
+  display: block;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 7px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition (all .3s);
+  &:hover {
+    background-color:#aaa;
+  }
+}
+
+@mixin button-purple {
+  @include button($purple);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 7px 45px;
+  text-transform: uppercase;
+}
