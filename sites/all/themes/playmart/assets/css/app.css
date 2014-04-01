@@ -14,96 +14,96 @@
 
 /*-------------------------------------- Column Creation ---------------------------------------*/
 .span_12 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 100%; }
   .span_12:last-child {
     margin-right: 0; }
 
 .span_11 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 91.48936%; }
   .span_11:last-child {
     margin-right: 0; }
 
 .span_10 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 82.97872%; }
   .span_10:last-child {
     margin-right: 0; }
 
 .span_9 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 74.46809%; }
   .span_9:last-child {
     margin-right: 0; }
 
 .span_8 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 65.95745%; }
   .span_8:last-child {
     margin-right: 0; }
 
 .span_7 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 57.44681%; }
   .span_7:last-child {
     margin-right: 0; }
 
 .span_6 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 48.93617%; }
   .span_6:last-child {
     margin-right: 0; }
 
 .span_5 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 40.42553%; }
   .span_5:last-child {
     margin-right: 0; }
 
 .span_4 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 31.91489%; }
   .span_4:last-child {
     margin-right: 0; }
 
 .span_3 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 23.40426%; }
   .span_3:last-child {
     margin-right: 0; }
 
 .span_2 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 14.89362%; }
   .span_2:last-child {
     margin-right: 0; }
 
 .span_1 {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 6.38298%; }
   .span_1:last-child {
@@ -359,6 +359,92 @@ h4 {
   color: #239600;
   font-size: 0.688em; }
 
+/*-------------------------------------- Main Navigation ---------------------------------------*/
+.mainNav {
+  margin-top: 6em;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 65.95745%;
+  margin-right: 0; }
+  .mainNav:last-child {
+    margin-right: 0; }
+  .mainNav ul {
+    margin: 0; }
+  .mainNav li {
+    float: left;
+    zoom: 1;
+    position: relative;
+    padding-bottom: 1em; }
+    .mainNav li:before, .mainNav li:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .mainNav li:after {
+      clear: both; }
+    .mainNav li.expanded {
+      padding-top: 0;
+      padding-right: 0; }
+    .mainNav li a {
+      float: left;
+      display: block;
+      font-family: "Enriqueta", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1em;
+      text-transform: uppercase;
+      color: #0067b3;
+      text-decoration: none;
+      -webkit-transition: color 0.2s ease;
+      -moz-transition: color 0.2s ease;
+      -o-transition: color 0.2s ease;
+      transition: color 0.2s ease;
+      margin-left: 1em; }
+      .mainNav li a:hover {
+        color: #d6172d; }
+    .mainNav li ul {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 1em;
+      width: 140px;
+      background: #0067b3; }
+      .mainNav li ul li {
+        float: none;
+        padding-bottom: 0; }
+        .mainNav li ul li a {
+          float: none;
+          display: block;
+          margin: 0;
+          padding: .5em 1em;
+          color: #FFF;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          text-transform: none;
+          -webkit-transition: all 0.2s ease;
+          -moz-transition: all 0.2s ease;
+          -o-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
+          .mainNav li ul li a:hover {
+            color: #FFF;
+            background: #73cbe5; }
+  .mainNav li.nav_roll > a {
+    color: #d6172d; }
+  .mainNav li.green_zone a:hover {
+    color: #239600; }
+
+.mobileNav {
+  display: none; }
+
+/*-------------------------------------- Admin Tabs ---------------------------------------*/
+.content nav.tabs li {
+  margin: 0;
+  padding: 0; }
+  .content nav.tabs li a {
+    padding: 5px 15px 2px; }
+
 /* Application Template
  * -----------------------------------------------------------------------------
  * Styling for the structure of the site. If your element doesn't show up on
@@ -456,6 +542,8 @@ li {
 /*-------------------------------------- Body and Background ---------------------------------------*/
 body {
   background: #e4f5fa url("../images/bg_clouds.jpg") center top repeat-x; }
+  body.admin-menu {
+    background-position: center 30px; }
 
 /*-------------------------------------- Main Container ---------------------------------------*/
 .container {
@@ -470,158 +558,6 @@ body {
     overflow: hidden; }
   .container:after {
     clear: both; }
-
-/*-------------------------------------- Begin Header ---------------------------------------*/
-.masthead {
-  padding-top: 1em;
-  position: relative;
-  zoom: 1;
-  margin-bottom: 1em; }
-  .masthead:before, .masthead:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  .masthead:after {
-    clear: both; }
-  .masthead .logo {
-    display: block;
-    float: left;
-    margin-right: 2.12766%;
-    width: 31.91489%; }
-    .masthead .logo:last-child {
-      margin-right: 0; }
-    .masthead .logo a {
-      color: transparent;
-      font: 0/0 a;
-      text-shadow: none;
-      display: block;
-      height: 125px;
-      width: 276px;
-      background: url("../images/logo_play-mart-main.png") 0 0 no-repeat; }
-      .masthead .logo a:hover {
-        background-position: 0 -125px; }
-  .masthead .social {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    zoom: 1; }
-    .masthead .social:before, .masthead .social:after {
-      content: "\0020";
-      display: block;
-      height: 0;
-      overflow: hidden; }
-    .masthead .social:after {
-      clear: both; }
-  .masthead .login_button {
-    color: #FFF;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: .5em 1em;
-    margin-right: .35em;
-    border-right: 1px solid #FFF;
-    text-decoration: none;
-    display: inline-block;
-    -webkit-transition: color 0.2s ease;
-    -moz-transition: color 0.2s ease;
-    -o-transition: color 0.2s ease;
-    transition: color 0.2s ease;
-    position: relative;
-    top: 7px; }
-    .masthead .login_button:hover {
-      color: rgba(255, 255, 255, 0.7); }
-  .masthead .facebook {
-    background: url(../images/sm_header/sm_header_facebook.png) 0 0 no-repeat; }
-    .masthead .facebook:hover {
-      background-position: 0 -30px; }
-  .masthead .twitter {
-    background: url(../images/sm_header/sm_header_twitter.png) 0 0 no-repeat; }
-    .masthead .twitter:hover {
-      background-position: 0 -30px; }
-  .masthead .in {
-    background: url(../images/sm_header/sm_header_linkedin.png) 0 0 no-repeat; }
-    .masthead .in:hover {
-      background-position: 0 -30px; }
-  .masthead .youtube {
-    background: url(../images/sm_header/sm_header_youtube.png) 0 0 no-repeat; }
-    .masthead .youtube:hover {
-      background-position: 0 -30px; }
-
-.mainNav {
-  margin-top: 6em;
-  display: block;
-  float: left;
-  margin-right: 2.12766%;
-  width: 65.95745%;
-  margin-right: 0; }
-  .mainNav:last-child {
-    margin-right: 0; }
-  .mainNav ul {
-    margin: 0; }
-  .mainNav li {
-    float: left;
-    zoom: 1;
-    position: relative;
-    padding-bottom: 1em; }
-    .mainNav li:before, .mainNav li:after {
-      content: "\0020";
-      display: block;
-      height: 0;
-      overflow: hidden; }
-    .mainNav li:after {
-      clear: both; }
-    .mainNav li a {
-      float: left;
-      display: block;
-      font-family: "Enriqueta", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: 1em;
-      text-transform: uppercase;
-      color: #0067b3;
-      text-decoration: none;
-      -webkit-transition: color 0.2s ease;
-      -moz-transition: color 0.2s ease;
-      -o-transition: color 0.2s ease;
-      transition: color 0.2s ease;
-      margin-left: 1em; }
-      .mainNav li a:hover {
-        color: #d6172d; }
-    .mainNav li ul {
-      display: none;
-      position: absolute;
-      top: 30px;
-      left: 1em;
-      width: 140px;
-      background: #0067b3; }
-      .mainNav li ul li {
-        float: none;
-        padding-bottom: 0; }
-        .mainNav li ul li a {
-          float: none;
-          display: block;
-          margin: 0;
-          padding: .5em 1em;
-          color: #FFF;
-          font-family: 'Source Sans Pro', sans-serif;
-          font-weight: 400;
-          font-style: normal;
-          text-transform: none;
-          -webkit-transition: all 0.2s ease;
-          -moz-transition: all 0.2s ease;
-          -o-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
-          .mainNav li ul li a:hover {
-            color: #FFF;
-            background: #73cbe5; }
-  .mainNav li.nav_roll > a {
-    color: #d6172d; }
-  .mainNav li.green_zone a:hover {
-    color: #239600; }
-
-.mobileNav {
-  display: none; }
 
 /*-------------------------------------- Feature Slider ---------------------------------------*/
 .feature {
@@ -648,8 +584,8 @@ body {
     clear: both; }
 
 .r_slide {
-  display: block;
   float: left;
+  display: block;
   margin-right: 2.12766%;
   width: 40.42553%;
   margin-left: 59.57447%;
@@ -793,8 +729,8 @@ h2 a.button {
   .product_grid:after {
     clear: both; }
   .product_grid ul li {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 31.91489%;
     margin-top: 1.25em;
@@ -970,8 +906,8 @@ table.company_info td {
     overflow: hidden; }
 
   .masthead .logo {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%; }
     .masthead .logo:last-child {
@@ -983,8 +919,8 @@ table.company_info td {
     top: 24px; }
 
   .mainNav {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%;
     clear: left;
@@ -1006,8 +942,8 @@ table.company_info td {
       clear: both; }
 
   .r_slide {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 40.42553%;
     margin-left: 59.57447%;
@@ -1034,8 +970,8 @@ table.company_info td {
   .masthead .social {
     display: none; }
   .masthead .logo {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0; }
@@ -1073,8 +1009,8 @@ table.company_info td {
     display: none; }
 
   .mobileNav {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0;
@@ -1128,8 +1064,8 @@ table.company_info td {
       color: #d6172d; }
 
   .product_grid ul li {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 48.93617%; }
     .product_grid ul li:last-child {
@@ -1153,15 +1089,15 @@ table.company_info td {
     font-size: .75em; }
 
   .footer_bottom .copyright {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 65.95745%; }
     .footer_bottom .copyright:last-child {
       margin-right: 0; }
   .footer_bottom .social {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 31.91489%;
     margin-right: 0; }
@@ -1196,8 +1132,8 @@ table.company_info td {
       width: 100%; }
 
   .step_container .span_4 {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0; }
@@ -1209,8 +1145,8 @@ table.company_info td {
       margin: 0 auto; } }
 @media screen and (max-width: 940px) and (max-width: 605px) {
   *[class*='span_'] {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0; }
@@ -1232,8 +1168,8 @@ table.company_info td {
       margin-bottom: 1em; }
 
   .product_grid ul li {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0; }
@@ -1251,8 +1187,8 @@ table.company_info td {
     .footer div.quick_links ul li {
       padding: .5em 0; }
   .footer .social {
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%;
     margin: 0 auto;
@@ -1265,8 +1201,8 @@ table.company_info td {
   .footer .copyright {
     text-align: center;
     margin-top: 1em;
-    display: block;
     float: left;
+    display: block;
     margin-right: 2.12766%;
     width: 100%; }
     .footer .copyright:last-child {
@@ -1291,5 +1227,83 @@ table.company_info td {
       border-color: #2fc900; } }
 /* Modules
  * -----------------------------------------------------------------------------*/
+/*-------------------------------------- Begin Header ---------------------------------------*/
+.masthead {
+  padding-top: 1em;
+  position: relative;
+  zoom: 1;
+  margin-bottom: 1em;
+  z-index: 100; }
+  .masthead:before, .masthead:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .masthead:after {
+    clear: both; }
+  .masthead .logo {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 31.91489%; }
+    .masthead .logo:last-child {
+      margin-right: 0; }
+    .masthead .logo a {
+      color: transparent;
+      font: 0/0 a;
+      text-shadow: none;
+      display: block;
+      height: 125px;
+      width: 276px;
+      background: url("../images/logo_play-mart-main.png") 0 0 no-repeat; }
+      .masthead .logo a:hover {
+        background-position: 0 -125px; }
+  .masthead .social {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    zoom: 1; }
+    .masthead .social:before, .masthead .social:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .masthead .social:after {
+      clear: both; }
+  .masthead .login_button {
+    color: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    margin-right: .35em;
+    border-right: 1px solid #FFF;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+    position: relative;
+    top: 7px; }
+    .masthead .login_button:hover {
+      color: rgba(255, 255, 255, 0.7); }
+  .masthead .facebook {
+    background: url(../images/sm_header/sm_header_facebook.png) 0 0 no-repeat; }
+    .masthead .facebook:hover {
+      background-position: 0 -30px; }
+  .masthead .twitter {
+    background: url(../images/sm_header/sm_header_twitter.png) 0 0 no-repeat; }
+    .masthead .twitter:hover {
+      background-position: 0 -30px; }
+  .masthead .in {
+    background: url(../images/sm_header/sm_header_linkedin.png) 0 0 no-repeat; }
+    .masthead .in:hover {
+      background-position: 0 -30px; }
+  .masthead .youtube {
+    background: url(../images/sm_header/sm_header_youtube.png) 0 0 no-repeat; }
+    .masthead .youtube:hover {
+      background-position: 0 -30px; }
+
 /* Pages
  * -----------------------------------------------------------------------------*/

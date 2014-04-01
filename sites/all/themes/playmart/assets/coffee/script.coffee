@@ -52,7 +52,7 @@
 
     drop_nav = $(".mainNav ul li").has("ul")
     drop_nav.find("> a").click (event) ->
-      event.preventDefault()
+      # event.preventDefault()
       return
 
     # Contact Form Show...

@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function pm_get_started_menu() {
+  /*
+   *$items['blog'] = array(
+   *  'title' => 'blogs',
+   *  'page callback' => 'blog_page',
+   *  'access arguments' => array('access content'),
+   *  'type' => MENU_SUGGESTED_ITEM,
+   *);
+   */
+  $items['get-started'] = array(
+    'title' => 'Get Started',
+    'page callback' => 'pm_get_started',
+    'access arguments' => array('access content')
+  );
+
+  return $items;
+}
+
+function pm_get_started()
+{
+  return theme('pm_get_started', '');
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pm_get_started_theme($existing, $type, $theme, $path) {
+  return array(
+    'pm_get_started' => array(
+      'file' => '',
+      'variables' => array('' => NULL, '' => NULL),
+    ),
+  );
+}

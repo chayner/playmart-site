@@ -1,1 +1,3 @@
-<?php include 'templates/page.tpl.php' ?>
+<?php
+include 'templates/page.tpl.php';
+?>

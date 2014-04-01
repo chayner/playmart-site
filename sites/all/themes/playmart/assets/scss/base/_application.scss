@@ -118,155 +118,16 @@ li {
 
 body {
   background: $light_blue url('../images/bg_clouds.jpg') center top repeat-x;
+
+  &.admin-menu {
+    background-position: center 30px;
+  }
 }
 
 /*-------------------------------------- Main Container ---------------------------------------*/
 
 .container {
   @include outer-container();
-}
-
-
-/*-------------------------------------- Begin Header ---------------------------------------*/
-
-.masthead {
-  padding-top: 1em;
-  position: relative;
-  @include clearfix;
-  margin-bottom: 1em;
-
-  .logo {
-    @include span-columns(4);
-
-    a {
-      @include hide-text();
-      display: block;
-      height: 125px;
-      width: 276px;
-      background: url('../images/logo_play-mart-main.png') 0 0 no-repeat;
-      &:hover {
-        background-position: 0 -125px;
-      }
-    }
-  }
-
-  .social {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    @include clearfix;
-  }
-
-  .login_button {
-    color: #FFF;
-    @include source_sans_bold;
-    text-transform: uppercase;
-    padding: .5em 1em;
-    margin-right: .35em;
-    border-right: 1px solid #FFF;
-    text-decoration: none;
-    display: inline-block;
-    @include color-transition;
-    position: relative;
-    top: 7px;
-
-    &:hover {
-      color: rgba(255,255, 255,.7);
-    }
-  }
-
-  .facebook {
-    @include icon('sm_header/sm_header_facebook.png');
-  }
-  .twitter {
-    @include icon('sm_header/sm_header_twitter.png');
-  }
-  .in {
-    @include icon('sm_header/sm_header_linkedin.png');
-  }
-  .youtube {
-    @include icon('sm_header/sm_header_youtube.png');
-  }
-
-}
-
-.mainNav {
-
-  margin-top: 6em;
-  @include span-columns(8);
-  @include omega();
-
-  ul {
-    margin: 0;
-  }
-
-  li {
-
-    float: left;
-    @include clearfix;
-    position: relative;
-    padding-bottom: 1em;
-
-    a {
-      float: left;
-      display: block;
-      @include enriqueta_bold;
-      font-size: em(16,16);
-      text-transform: uppercase;
-      color: $nav_color;
-      text-decoration: none;
-      @include color-transition;
-      margin-left: 1em;
-
-      &:hover {
-        color: $nav_hover;
-      }
-    }
-
-    ul {
-      display: none;
-      position: absolute;
-      top: 30px;
-      left: 1em;
-      width: 140px;
-      background: $accent2;
-
-      li {
-        float: none;
-        padding-bottom: 0;
-
-        a {
-          float: none;
-          display: block;
-          margin: 0;
-          padding: .5em 1em;
-          color: #FFF;
-          @include source_sans;
-          text-transform: none;
-          @include all-transition;
-
-          &:hover {
-            color:#FFF;
-            background: $subnav_hover;
-          }
-        }
-      }
-    }
-
-  }
-
-  li.nav_roll > a {
-    color: $accent;
-  }
-
-  li.green_zone a:hover {
-    color: $green_zone;
-  }
-
-}
-
-.mobileNav {
-  display: none;
 }
 
 /*-------------------------------------- Feature Slider ---------------------------------------*/

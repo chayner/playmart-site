@@ -9,11 +9,12 @@ function playmart_preprocess_html(&$vars) {
 }
 */
 
+/*
 function playmart_preprocess_page(&$vars,$hook) {
 
-  if (isset($vars['node'])) {
-    $vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
-  }
+  // if (isset($vars['node'])) {
+  //   $vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
+  // }
 
   //typekit
   //drupal_add_js('http://use.typekit.com/XXX.js', 'external');
@@ -26,7 +27,7 @@ function playmart_preprocess_page(&$vars,$hook) {
   //  drupal_add_css('http://fonts.googleapis.com/css?family=Bree+Serif','external');
 
 }
-
+*/
 /*
 function playmart_preprocess_region(&$vars,$hook) {
   //  kpr($vars['content']);

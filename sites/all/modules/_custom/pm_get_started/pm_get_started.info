@@ -1,0 +1,8 @@
+name = Get Started
+description = Playmart Get Started Page
+core = 7.x
+package = _Playmart
+version = 7.x-1.0
+project = pm_get_started
+features[features_api][] = api:2
+project path = sites/all/modules/_custom

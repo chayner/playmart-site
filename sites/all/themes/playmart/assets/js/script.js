@@ -41,9 +41,7 @@
         return false;
       });
       drop_nav = $(".mainNav ul li").has("ul");
-      drop_nav.find("> a").click(function(event) {
-        event.preventDefault();
-      });
+      drop_nav.find("> a").click(function(event) {});
       $("#contactTrigger").click(function(event) {
         $(".get_started .contact_form").slideToggle(500);
         event.preventDefault();

@@ -1,7 +1,7 @@
 name = Products
 description = Products for Playmart
 core = 7.x
-package = Playmart
+package = _Playmart
 version = 7.x-1.0
 project = pm_products
 dependencies[] = colorbox

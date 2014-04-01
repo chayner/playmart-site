@@ -1,0 +1,97 @@
+/*-------------------------------------- Main Navigation ---------------------------------------*/
+
+.mainNav {
+  margin-top: 6em;
+  @include span-columns(8);
+  @include omega();
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+
+    float: left;
+    @include clearfix;
+    position: relative;
+    padding-bottom: 1em;
+
+    &.expanded {
+      padding-top: 0;
+      padding-right: 0;
+    }
+
+    a {
+      float: left;
+      display: block;
+      @include enriqueta_bold;
+      font-size: em(16,16);
+      text-transform: uppercase;
+      color: $nav_color;
+      text-decoration: none;
+      @include color-transition;
+      margin-left: 1em;
+
+      &:hover {
+        color: $nav_hover;
+      }
+    }
+
+    ul {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 1em;
+      width: 140px;
+      background: $accent2;
+
+      li {
+        float: none;
+        padding-bottom: 0;
+
+        a {
+          float: none;
+          display: block;
+          margin: 0;
+          padding: .5em 1em;
+          color: #FFF;
+          @include source_sans;
+          text-transform: none;
+          @include all-transition;
+
+          &:hover {
+            color:#FFF;
+            background: $subnav_hover;
+          }
+        }
+      }
+    }
+
+  }
+
+  li.nav_roll > a {
+    color: $accent;
+  }
+
+  li.green_zone a:hover {
+    color: $green_zone;
+  }
+
+}
+
+.mobileNav {
+  display: none;
+}
+
+/*-------------------------------------- Admin Tabs ---------------------------------------*/
+
+.content nav.tabs {
+  li {
+    margin: 0;
+    padding: 0;
+
+    a {
+      padding: 5px 15px 2px;
+    }
+  }
+}

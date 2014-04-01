@@ -1,0 +1,63 @@
+/*-------------------------------------- Begin Header ---------------------------------------*/
+
+.masthead {
+  padding-top: 1em;
+  position: relative;
+  @include clearfix;
+  margin-bottom: 1em;
+  z-index: 100;
+
+  .logo {
+    @include span-columns(4);
+
+    a {
+      @include hide-text();
+      display: block;
+      height: 125px;
+      width: 276px;
+      background: url('../images/logo_play-mart-main.png') 0 0 no-repeat;
+      &:hover {
+        background-position: 0 -125px;
+      }
+    }
+  }
+
+  .social {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    @include clearfix;
+  }
+
+  .login_button {
+    color: #FFF;
+    @include source_sans_bold;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    margin-right: .35em;
+    border-right: 1px solid #FFF;
+    text-decoration: none;
+    display: inline-block;
+    @include color-transition;
+    position: relative;
+    top: 7px;
+
+    &:hover {
+      color: rgba(255,255, 255,.7);
+    }
+  }
+
+  .facebook {
+    @include icon('sm_header/sm_header_facebook.png');
+  }
+  .twitter {
+    @include icon('sm_header/sm_header_twitter.png');
+  }
+  .in {
+    @include icon('sm_header/sm_header_linkedin.png');
+  }
+  .youtube {
+    @include icon('sm_header/sm_header_youtube.png');
+  }
+
+}
